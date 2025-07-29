@@ -1,3 +1,4 @@
+// src/pages/Login.js
 import React, { useState } from 'react';
 import './Login.css';
 
@@ -87,7 +88,7 @@ const Login = ({ onLogin }) => {
           {/* Header */}
           <div className="login-header">
             <div className="logo">
-              <span className="logo-icon">🔷</span>
+              <span className="logo-icon"></span>
               <div className="logo-text-container">
                 <span className="logo-text">OUTLAW Admin</span>
                 <span className="logo-subtitle">Dashboard</span>
@@ -100,7 +101,7 @@ const Login = ({ onLogin }) => {
           <form onSubmit={handleSubmit} className="login-form">
             {error && (
               <div className="error-message">
-                <span className="error-icon">⚠️</span>
+                <span className="error-icon"></span>
                 {error}
               </div>
             )}
@@ -108,7 +109,7 @@ const Login = ({ onLogin }) => {
             <div className="form-group">
               <label htmlFor="email" className="form-label">Email Address</label>
               <div className="input-container">
-                <span className="input-icon">📧</span>
+                <span className="input-icon"></span>
                 <input
                   type="email"
                   id="email"
@@ -125,7 +126,7 @@ const Login = ({ onLogin }) => {
             <div className="form-group">
               <label htmlFor="password" className="form-label">Password</label>
               <div className="input-container">
-                <span className="input-icon">🔒</span>
+                <span className="input-icon"></span>
                 <input
                   type={showPassword ? 'text' : 'password'}
                   id="password"
@@ -142,7 +143,7 @@ const Login = ({ onLogin }) => {
                   onClick={() => setShowPassword(!showPassword)}
                   disabled={loading}
                 >
-                  {showPassword ? '👁️' : '🙈'}
+                  {showPassword ? '' : ''}
                 </button>
               </div>
             </div>
@@ -181,16 +182,16 @@ const Login = ({ onLogin }) => {
                 className="demo-button"
                 disabled={loading}
               >
-                🚀 Fill Demo Credentials
+                 Fill Demo Credentials
               </button>
               <div className="demo-info">
                 <div style={{ marginBottom: '8px' }}>
                   <strong>Available Accounts:</strong>
                 </div>
                 <div style={{ fontSize: '11px', lineHeight: '1.4' }}>
-                  <div>👑 <strong>admin@outlaw.com</strong> | admin123</div>
-                  <div>👤 user@outlaw.com | user123</div>
-                  <div>🧪 test@outlaw.com | test123</div>
+                  <div> <strong>admin@outlaw.com</strong> | admin123</div>
+                  <div> user@outlaw.com | user123</div>
+                  <div> test@outlaw.com | test123</div>
                 </div>
               </div>
             </div>
