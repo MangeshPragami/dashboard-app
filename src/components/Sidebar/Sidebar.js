@@ -37,9 +37,9 @@ const Sidebar = ({ activeSection, setActiveSection }) => {
         },
         {
           id: 'sme-matching',
-          name: 'SME Matching',
-          icon: '🤝',
-          description: 'approval flows, expert management',
+          name: 'SME Information',
+          icon: '👨‍💼',
+          description: 'expert profiles, portfolios, performance analytics',
           arrow: true
         }
       ]

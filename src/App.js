@@ -6,7 +6,7 @@ import UserManagement from './pages/UserManagement';
 import IdeasStudies from './pages/IdeasStudies';
 import Analytics from './pages/Analytics';
 import Surveys from './pages/Surveys';
-import SMEMatching from './pages/SMEMatching';
+import SMEInformation from './pages/SMEInformation'; // Updated import
 import Settings from './pages/Settings';
 
 function App() {
@@ -37,7 +37,7 @@ function App() {
       case 'surveys':
         return <Surveys />;
       case 'sme-matching':
-        return <SMEMatching />;
+        return <SMEInformation />; // Updated component
       case 'settings':
         return <Settings />;
       default:
